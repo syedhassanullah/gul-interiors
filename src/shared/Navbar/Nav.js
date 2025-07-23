@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
+import { Link } from "react-scroll";
 import './Nav.css'
 import SideNav from "./SideNav";
+import { Slant as Hamburger } from 'hamburger-react'
 
 
 
@@ -24,6 +26,28 @@ const Nav = () => {
         return () => window.removeEventListener('scroll', changeBackNav);
     }, []);
 
+    // Toggle Work
+
+    const [sideBar, setSideBar] = useState(false)
+
+    const open = () => {
+        setSideBar(true)
+    }
+
+    const close = () => {
+        setSideBar(false)
+    }
+
+    const HandelTogel = (toggled) => {
+        if (toggled) {
+            open();
+        } else {
+            close();
+        }
+    }
+
+
+
     return (
         <>
             <nav className={navClass}>
@@ -35,7 +59,7 @@ const Nav = () => {
                                 <Link>Home</Link>
                             </li>
                             <li className="Nav-Link">
-                                <Link>About Us</Link>
+                                <Link to="about" smooth={true} duration={500} offset={-50} >About Us</Link>
                             </li>
                             <li className="Nav-Link">
                                 <Link>Services</Link>
@@ -48,8 +72,15 @@ const Nav = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="humburger">Humburger</div>
-                    <SideNav/>
+                    <div className="humburger">
+                        <Hamburger
+                            toggled={sideBar}
+                            toggle={setSideBar}
+                            onToggle={HandelTogel}
+                            type='primary'
+                            size={22} />
+                    </div>
+                    <SideNav sideBarButton={sideBar} />
                 </div>
             </nav>
         </>

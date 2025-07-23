@@ -20,7 +20,7 @@
         z-index: 1;
 
         .hero-contain {
-            padding-top: 250px;
+            padding: 250px 0px;
         }
 
         .content {
