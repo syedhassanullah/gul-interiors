@@ -1,0 +1,82 @@
+.hero {
+    height: 100vh;
+    /* width: 100%; */
+    /* background: black; */
+    overflow: hidden;
+    position: relative;
+    
+
+    video {
+        z-index: -1;
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .background-content-container {
+        background-image: linear-gradient(90deg, rgba(0, 0, 1, 0.63), rgba(0, 62, 106, 0.42));
+        position: relative;
+        height: 100vh;
+        z-index: 1;
+
+        .hero-contain {
+            padding-top: 250px;
+        }
+
+        .content {
+            text-align: center;
+
+            h1 {
+                color: aliceblue;
+                text-transform: uppercase;
+                font-size: 4rem;
+
+
+                span {
+                    color: var(--primary-color);
+                    font-weight: 800;
+                }
+            }
+
+            h2 {
+                color: aliceblue;
+                text-transform: uppercase;
+                /* margin: 0px;
+                padding: 0px; */
+            }
+
+            button{
+                padding: 10px 20px;
+                background: linear-gradient(90deg,  rgb(1, 71, 131),rgb(13, 138, 248));
+                border: none;
+                transition: 0.5s ease all;
+                border-radius: 10px;
+                 box-shadow: rgb(38, 45, 52) 0px 0px 20px 0px;
+                position: relative;
+                color: aliceblue;
+            }
+
+            button:hover{
+                box-shadow: rgb(31, 147, 248) 0px 0px 20px 0px;
+               
+            }
+            /* button::before{
+                content: '';
+                height: 0%;
+                width: 0%;
+                position: absolute;
+                
+            }
+
+            button:hover::before{
+                box-shadow: rgb(0, 136, 255) 0px 0px 20px 0px;
+                background: linear-gradient(90deg,  rgb(1, 71, 131),rgb(0, 136, 255));
+                height: 100%;
+                width: 100%;
+                display: block;
+            } */
+
+            
+        }
+    }
+}
