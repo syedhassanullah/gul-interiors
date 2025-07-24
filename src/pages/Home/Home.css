@@ -1,16 +1,21 @@
-:root{
-    --primary-color : rgb(0, 128, 255);
-    --section-padding : 200px 0px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+
+
+:root {
+  --primary-color: rgb(0, 128, 255);
+  --section-padding: 200px 0px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body{
-     overflow-x: hidden;
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
-.section-padding{
-    padding: var(--section-padding);
+.section-padding {
+  padding: var(--section-padding);
 }

@@ -44,13 +44,26 @@ const Hero = () => {
                         autoPlay muted loop />
                 </AnimatePresence>
                 <div className='background-content-container'>
-                    <div className='hero-contain container'>
+                    <div className='hero-content container'>
                         <div className='row'>
-                            <div className='col-md-12'>
+                            <div className='col-md-12 '>
                                 <div className="content">
-                                    <h1><span>gul</span> ineriors</h1>
-                                    <h2>The Art Of Interior and Manufacture</h2>
+                                    <div>
+                                    <span className="text-sm md:text-base px-4 py-1 rounded-full inline-block mb-4 shadow">
+                                        The Art of Interior and Manufacture
+                                    </span>
+
+                                    <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                                        Transform Your Space with Timeless Elegance
+                                    </h1>
+
+                                    <p className="mt-4 text-lg md:text-xl text-gray-200">
+                                        Creotrix Interiors turns your vision into reality with stunning, functional designs.
+                                    </p>
+                                    
+                                    <div className='pt-5'></div>
                                     <button>Get Free Consultation</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -62,3 +75,4 @@ const Hero = () => {
 }
 
 export default Hero
+

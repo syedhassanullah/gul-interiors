@@ -4,7 +4,7 @@
     /* background: black; */
     overflow: hidden;
     position: relative;
-    
+
 
     video {
         z-index: -1;
@@ -18,48 +18,61 @@
         position: relative;
         height: 100vh;
         z-index: 1;
+        /* align-items: center;
+        justify-content: center;
+        display: flex; */
 
-        .hero-contain {
-            padding: 250px 0px;
+        .hero-content {
+            padding-top: 200px;
         }
 
         .content {
             text-align: center;
+            /* background-color: aqua; */
+            /* width: 80%; */
+
+            span{
+                background: linear-gradient(90deg, rgb(1, 71, 131), rgb(13, 138, 248));
+                color: aliceblue;
+            }
 
             h1 {
                 color: aliceblue;
                 text-transform: uppercase;
-                font-size: 4rem;
-
-
-                span {
-                    color: var(--primary-color);
-                    font-weight: 800;
-                }
+                /* font-size: 4rem; */
+                /* width: 80%; */
+                width: 80%;
+                margin: auto;
             }
 
-            h2 {
-                color: aliceblue;
+            p {
+                color: rgb(202, 202, 202);
                 text-transform: uppercase;
+                /* font-size: 1.1rem; */
                 /* margin: 0px;
                 padding: 0px; */
             }
 
-            button{
-                padding: 10px 20px;
-                background: linear-gradient(90deg,  rgb(1, 71, 131),rgb(13, 138, 248));
+            button {
+                padding: 13px;
+                background: linear-gradient(90deg, rgb(1, 71, 131), rgb(13, 138, 248));
                 border: none;
                 transition: 0.5s ease all;
-                border-radius: 10px;
-                 box-shadow: rgb(38, 45, 52) 0px 0px 20px 0px;
+                /* border-radius: 10px; */
+                box-shadow: rgb(38, 45, 52) 0px 0px 20px 0px;
                 position: relative;
                 color: aliceblue;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                font-weight: 700;
+                text-transform: uppercase;
             }
 
-            button:hover{
+            button:hover {
                 box-shadow: rgb(31, 147, 248) 0px 0px 20px 0px;
-               
+
             }
+
             /* button::before{
                 content: '';
                 height: 0%;
@@ -76,7 +89,7 @@
                 display: block;
             } */
 
-            
+
         }
     }
 }
