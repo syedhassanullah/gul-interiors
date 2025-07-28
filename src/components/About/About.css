@@ -1,0 +1,42 @@
+.half-bg::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient( 70deg ,rgb(16, 23, 28), rgb(0, 24, 55));
+    z-index: -12;
+}
+
+.about{
+    position: relative;
+}
+    
+.heading
+{
+    text-align: center;
+}
+
+.heading h1{
+    position: relative;
+    /* width: auto; */
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.heading h1::before{
+    content: '';
+    background-color: var(--primary-color);
+    /* left: 0; */
+    bottom: 0;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+
+.heading h1:hover::before{
+    width: 130px;
+}

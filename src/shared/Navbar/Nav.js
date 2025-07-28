@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 import './Nav.css'
 import SideNav from "./SideNav";
 import { Slant as Hamburger } from 'hamburger-react'
+// import logo from '../../assets/images/GULLOGO WHOTE.png'
+import logo from '../../assets/images/geewj.png'
 
 
 
@@ -52,7 +54,7 @@ const Nav = () => {
         <>
             <nav className={navClass}>
                 <div className="nav-container container">
-                    <div className="nav-title"><span>Gul</span> Interiors</div>
+                    <div className="nav-title"><img src={logo} alt="logo"/></div>
                     <div className="nav-item">
                         <ul>
                             <li className="Nav-Link">

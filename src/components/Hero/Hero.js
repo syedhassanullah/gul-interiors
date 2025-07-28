@@ -1,10 +1,13 @@
 import './Hero.css'
 import bgVideo1 from '../../assets/Videos/bg1.mp4'
 import bgVideo2 from '../../assets/Videos/bg2.mp4'
-import bgVideo3 from '../../assets/Videos/bg3.mp4'
+// import bgVideo3 from '../../assets/Videos/bg3.mp4'
+// import bgVideo4 from '../../assets/Videos/bg4.mp4'
+import bgVideo5 from '../../assets/Videos/bg5.mp4'
 // import bgVideo4 from '../../assets/Videos/bg4.mp4'
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import logo from '../../assets/images/geewj.png'
 
 
 const Hero = () => {
@@ -12,7 +15,9 @@ const Hero = () => {
     const videoData = [
         { video: bgVideo1 },
         { video: bgVideo2 },
-        { video: bgVideo3 },
+        // { video: bgVideo3 },
+        // { video: bgVideo4 },
+        { video: bgVideo5 },
         // { video: bgVideo4 }
     ]
 
@@ -49,9 +54,8 @@ const Hero = () => {
                             <div className='col-md-12 '>
                                 <div className="content">
                                     <div>
-                                    <span className="text-sm md:text-base px-4 py-1 rounded-full inline-block mb-4 shadow">
-                                        The Art of Interior and Manufacture
-                                    </span>
+                                    <div className='hero-image'><img src={logo} alt='hero'/></div>
+                                    
 
                                     <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                                         Transform Your Space with Timeless Elegance

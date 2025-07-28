@@ -4,7 +4,8 @@
 
 :root {
   --primary-color: rgb(0, 128, 255);
-  --section-padding: 200px 0px;
+  --section-padding: 130px 0px;
+  --section-padding-mobile: 80px 0px;
 }
 
 html {
@@ -17,5 +18,5 @@ body {
 }
 
 .section-padding {
-  padding: var(--section-padding);
+  padding: var(--section-padding-mobile);
 }
