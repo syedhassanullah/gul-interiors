@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: rgb(0, 128, 255);
+  --secondary-color: rgba(0, 128, 255, 0.452);
   --section-padding: 130px 0px;
   --section-padding-mobile: 80px 10px;
 }
@@ -50,8 +51,8 @@ body {
   background-color: var(--primary-color);
   /* left: 0; */
   bottom: 0;
-  width: 30px;
-  height: 4px;
+  width: 15px;
+  height: 4px;  
   position: absolute;
   border-radius: 10px;
   transition: 0.5s ease all;

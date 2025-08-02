@@ -5,6 +5,7 @@ import { Element } from 'react-scroll'
 
 
 import './Home.css'
+import Contact from '../../components/Contact/Contact'
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <Element name="about">
         <About/>
         </Element>
+        <Contact/>
         </>
     )
 }
