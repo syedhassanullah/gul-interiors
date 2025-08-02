@@ -5,7 +5,7 @@
 :root {
   --primary-color: rgb(0, 128, 255);
   --section-padding: 130px 0px;
-  --section-padding-mobile: 80px 0px;
+  --section-padding-mobile: 80px 10px;
 }
 
 html {
@@ -18,5 +18,45 @@ body {
 }
 
 .section-padding {
-  padding: var(--section-padding-mobile);
+  /* padding: var(--section-padding-mobile); */
+  padding: var(--section-padding);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .section-padding {
+    padding: var(--section-padding-mobile);
+  }
+}
+
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  position: relative;
+  /* width: auto; */
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.heading h1::before {
+  content: '';
+  background-color: var(--primary-color);
+  /* left: 0; */
+  bottom: 0;
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  border-radius: 10px;
+  transition: 0.5s ease all;
+}
+
+.heading h1:hover::before {
+  width: 80px;
 }
