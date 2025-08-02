@@ -1,3 +1,16 @@
 .Contact{
-    background-color: rgba(199, 212, 223, 0.76);
+    background-color: rgba(199, 212, 223, 0.661);
+    position: relative;
 }
+/* 
+.Contact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgb(0, 0, 0), rgb(0, 38, 61));
+    z-index: -12;
+} */
+
