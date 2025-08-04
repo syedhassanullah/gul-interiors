@@ -6,6 +6,7 @@ import { Element } from 'react-scroll'
 
 import './Home.css'
 import Contact from '../../components/Contact/Contact'
+import Footer from '../../shared/Footer/Footer'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <About/>
         </Element>
         <Contact/>
+        <Footer/>
         </>
     )
 }
