@@ -10,7 +10,7 @@ const SideNav = ({ sideBarButton }) => {
         <motion.div
             initial={{ y: '-100%', opacity: 0 }}
             animate={{ y: sideBarButton ? '0%' : '-100%', opacity: sideBarButton ? 1 : 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.8 }}
             className="SideNav"
         >
             <div className="side-content container">

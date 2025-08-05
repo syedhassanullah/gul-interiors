@@ -13,9 +13,9 @@ nav {
 
 .active-Nav {
     /* background: linear-gradient(90deg, rgba(0, 0, 1, 0.63), rgba(0, 62, 106, 0.464)); */
-      background: linear-gradient(120deg, rgb(0, 0, 0), rgb(0, 52, 84));
+    background: linear-gradient(120deg, rgb(0, 0, 0), rgb(0, 52, 84));
     box-shadow: rgba(0, 0, 0, 0.578) 0px 0px 20px 0px;
-    backdrop-filter: blur(30px);
+    /* backdrop-filter: blur(30px); */
 }
 
 .nav-container {
@@ -34,7 +34,7 @@ nav {
     z-index: 1;
     width: 150px;
 
-    img{
+    img {
         width: 100%;
     }
 }
@@ -87,23 +87,25 @@ nav {
 
 .SideNav {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.778);
+    /* background-color: rgba(0, 0, 0, 0.778); */
     left: 0;
     top: 0;
-    backdrop-filter: blur(30px);
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
-    /* border-radius: 10px,10px,0px,0px; */
+    /* backdrop-filter: blur(30px); */
+    /* border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px; */
+    /* transition: 0.8s ease all; */
+    backdrop-filter: blur(12px);
+    background: linear-gradient(-50deg, rgba(0, 10, 18, 0.538), rgb(0, 33, 54));
 
     .side-content {
         height: 100%;
         width: 100%;
-        background: linear-gradient(90deg, rgba(0, 0, 1, 0.63), rgba(0, 62, 106, 0.464));
+        /* background: linear-gradient(90deg, rgba(0, 0, 1, 0.63), rgba(0, 62, 106, 0.464)); */
+        
 
-        border-bottom-left-radius: 80px;
-        border-bottom-right-radius: 80px;
+        border-radius: 90px, 90px, 90px, 90px;
     }
 
     .side-navbar-item {
@@ -135,7 +137,7 @@ nav {
         padding: 5px 0;
         font-weight: 500;
     }
-    
+
 }
 
 

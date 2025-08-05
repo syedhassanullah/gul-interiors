@@ -1,0 +1,19 @@
+.ser-lft-sid{
+    background: var(--dark-background);
+    height: 100%;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service{
+    position: relative;
+}
+
+.service-heading{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
