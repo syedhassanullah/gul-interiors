@@ -20,10 +20,24 @@
 .ser-lft-sid ul li{
     list-style: none;
     text-decoration: none;
-    padding: 10px;
-    background-color: rgba(240, 248, 255, 0.407);
 }
 
+.ser-lft-sid button {
+  padding: 10px 0px;
+  width: 160px;
+  background-color: rgba(240, 248, 255, 0.242);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.btn {
+  white-space: normal;     /* Text wrap hone do */
+  word-wrap: break-word;   /* Agar word lamba ho to tod do */
+  overflow-wrap: break-word;
+}
 .service {
     position: relative;
 }
