@@ -11,6 +11,7 @@
 
 .about {
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.578) 0px 0px 20px 0px;
 }
 
 .about-text h2{

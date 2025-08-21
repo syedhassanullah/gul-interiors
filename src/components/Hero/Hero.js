@@ -49,26 +49,29 @@ const Hero = () => {
                         autoPlay muted loop />
                 </AnimatePresence>
                 <div className='background-content-container'>
-                    <div className='hero-content container'>
-                        <div className='row'>
-                            <div className='col-md-12 '>
+                    <div className='hero-content'>
+                        <div className='row d-flex p-0 m-0'>
+
+                            <div className='col-md-6 col-sm-12 p-0'>
                                 <div className="content">
                                     <div>
-                                    <div className='hero-image'><img src={logo} alt='hero'/></div>
-                                    
+                                        
 
-                                    <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                                        Transform Your Space with Timeless Elegance
-                                    </h1>
+                                        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                                            Transform Your Space with Timeless Elegance
+                                        </h1>
 
-                                    <p className="mt-4 text-lg md:text-xl text-gray-200">
-                                        Creotrix Interiors turns your vision into reality with stunning, functional designs.
-                                    </p>
-                                    
-                                    <div className='pt-5'></div>
-                                    <button>Get Free Consultation</button>
+                                        <p className="mt-4 text-lg md:text-xl text-gray-200">
+                                            Creotrix Interiors turns your vision into reality with stunning, functional designs.
+                                        </p>
+
+                                        <div className='pt-5'></div>
+                                        <button>Get Free Consultation</button>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-md-6'>
+                                <div className='hero-image'><img src={logo} alt='hero' /> <div></div></div>
                             </div>
                         </div>
                     </div>

@@ -25,16 +25,36 @@
 }
 
 .background-content-container .hero-content {
-    padding-top: 150px;
+    /* padding-top: 150px; */
+    
 }
 
 .background-content-container .hero-content .content {
     text-align: center;
     /* background-color: aqua; */
     /* width: 80%; */
+    background: var(--dark-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 60px;
 }
 
-.background-content-container .hero-content .content .hero-image img {
+ .hero-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+ }
+
+ .hero-image img {
     width: 400px;
 }
 
