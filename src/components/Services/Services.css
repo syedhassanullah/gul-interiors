@@ -9,7 +9,7 @@
 }
 
 
-.ser-lft-sid ul{
+.ser-lft-sid ul {
     padding: 0px 0px 0px 0px !important;
     margin: 0px;
     display: flex;
@@ -17,27 +17,44 @@
     gap: 10px;
 }
 
-.ser-lft-sid ul li{
+.ser-lft-sid ul li {
     list-style: none;
     text-decoration: none;
 }
 
 .ser-lft-sid button {
-  padding: 10px 0px;
-  width: 160px;
-  background-color: rgba(240, 248, 255, 0.242);
-  color: white;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+    padding: 10px 0px;
+    width: 160px;
+    background-color: rgba(240, 248, 255, 0.242);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
+
+.ser-lft-sid button:hover {
+    background-color: rgb(176, 196, 213);
+    color: var(--primary-color);
+}
+
+.ser-lft-sid .active {
+    background-color: rgb(176, 196, 213);
+    box-shadow: rgb(31, 147, 248) 0px 0px 20px 0px;
+    color: var(--primary-color);
+}
+
+
+
 .btn {
-  white-space: normal;     /* Text wrap hone do */
-  word-wrap: break-word;   /* Agar word lamba ho to tod do */
-  overflow-wrap: break-word;
+    white-space: normal;
+    /* Text wrap hone do */
+    word-wrap: break-word;
+    /* Agar word lamba ho to tod do */
+    overflow-wrap: break-word;
 }
+
 .service {
     position: relative;
 }
@@ -48,10 +65,19 @@
     /* width: 100%; */
 }
 
-.ser-rit-sid{
+.ser-rit-sid {
     padding: 0px 6%;
 }
 
-@media (max-width: 768px) {
-    
+
+/* .service-card{
+    transition: 0.5s ease all;
 }
+
+.service-card:hover{
+    background: var(--dark-background);
+    color: aliceblue;
+}
+ */
+
+@media (max-width: 768px) {}

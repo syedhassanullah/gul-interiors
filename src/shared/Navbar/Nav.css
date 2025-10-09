@@ -22,7 +22,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 70px;
     padding: 0 20px;
     color: aliceblue;
 }
@@ -161,7 +161,7 @@ nav {
         .nav-title {
             /* font-size: 1.5rem; */
             text-transform: uppercase;
-            transition: 0.9s  ease-in-out;
+            transition: 0.9s ease-in-out;
             font-weight: 700;
             z-index: 1;
             width: 100px;
@@ -170,6 +170,8 @@ nav {
                 width: 100%;
             }
         }
+
+
     }
 
 }

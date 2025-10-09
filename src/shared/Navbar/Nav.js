@@ -47,6 +47,22 @@ const Nav = () => {
             close();
         }
     }
+    // const scrollToSection = (id) => {
+    //     const section = document.getElementById(id);
+    //     if (section) {
+    //         section.scrollIntoView({ behavior: "smooth" });
+    //         window.location.hash = id; // 👈 URL me #id add ho jayega
+    //     }
+    // };
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+
+            // 👇 URL me #id add kar do
+            window.location.hash = id;
+        }
+    };
 
 
 
@@ -54,14 +70,16 @@ const Nav = () => {
         <>
             <nav className={navClass}>
                 <div className="nav-container container">
-                    <div className="nav-title"><img src={logo} alt="logo"/></div>
+                    <div className="nav-title"><img src={logo} alt="logo" /></div>
                     <div className="nav-item">
                         <ul>
                             <li className="Nav-Link">
                                 <Link>Home</Link>
                             </li>
                             <li className="Nav-Link">
-                                <Link to="about" smooth={true} duration={500} offset={-50} >About Us</Link>
+                                <Link onClick={() => scrollToSection("about")}   smooth={true} duration={500} offset={-50} >About Us</Link>
+                                {/* <button >About</button> */}
+
                             </li>
                             <li className="Nav-Link">
                                 <Link>Services</Link>

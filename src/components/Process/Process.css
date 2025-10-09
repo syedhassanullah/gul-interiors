@@ -1,0 +1,15 @@
+.process{
+    background: linear-gradient(50deg, #c7d4dfa7,#092135a9 );
+}
+
+.process-card{
+    height: 30rem;
+    /* background-color: red; */
+    /* background: linear-gradient(50deg, #001628a7,#09213500 ); */
+    backdrop-filter: blur(50px);
+    border-radius: 60px;
+}
+
+.process-card-sec{
+    padding: 0px 120px;
+}

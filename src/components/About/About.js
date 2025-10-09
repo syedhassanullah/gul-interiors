@@ -40,7 +40,7 @@ const About = () => {
 
 
     return (
-        <div className="half-bg about  section-padding">
+        <div id="about" className="half-bg about  section-padding">
             <div >
                 <div className='container about-content'>
 
