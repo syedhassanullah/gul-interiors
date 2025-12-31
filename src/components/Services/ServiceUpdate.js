@@ -32,20 +32,23 @@ function ServiceUpdate() {
         <div className='service'>
 
             <div className='row p-0 m-0'>
+
                 <div className='col-md-4 p-0'>
                     <div className='ser-lft-sid '>
-                        <ul >
-                            {categories.map((cat) => (
-                                <li key={cat}>
-                                    <button
-                                        className={selectedService === cat ? "active" : ""}
-                                        onClick={() => setSelectedService(cat)}
-                                    >
-                                        {cat}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
+                        
+                            <ul >
+                                {categories.map((cat) => (
+                                    <li key={cat}>
+                                        <button
+                                            className={selectedService === cat ? "active" : ""}
+                                            onClick={() => setSelectedService(cat)}
+                                        >
+                                            {cat}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        
                     </div>
                 </div>
                 <div className='col-md-8 p-0'>
@@ -87,7 +90,8 @@ function ServiceUpdate() {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
+
     )
 }
 

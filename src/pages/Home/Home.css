@@ -5,7 +5,7 @@
 :root {
   --primary-color: rgb(0, 128, 255);
   --secondary-color: rgba(0, 128, 255, 0.452);
-  --section-padding: 130px 0px;
+  --section-padding: 110px 0px;
   --section-padding-mobile: 80px 10px;
   --dark-background: linear-gradient(-50deg, rgb(0, 10, 18), rgb(0, 44, 72));
 }

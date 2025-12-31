@@ -62,6 +62,7 @@ const Nav = () => {
             // 👇 URL me #id add kar do
             window.location.hash = id;
         }
+        
     };
 
 
