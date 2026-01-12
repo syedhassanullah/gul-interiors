@@ -1,13 +1,40 @@
 .process{
-    background: linear-gradient(50deg, #c7d4dfa7,#092135a9 );
+    background-image: url(../../assets/./images/about.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.process2{
+    background: linear-gradient(50deg, #00304ea7,#00070dd5 );
+    width: 100%;
+    height: 100%;
+}
+
+.process .heading{
+    color: aliceblue;
 }
 
 .process-card{
-    height: 30rem;
+    height: 10rem;
     /* background-color: red; */
-    /* background: linear-gradient(50deg, #001628a7,#09213500 ); */
-    backdrop-filter: blur(50px);
-    border-radius: 60px;
+    /* background: linear-gradient(50deg, #00162862,#517a9b65 ); */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.105);
+    transition: 0.5s ease all;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.process-card:hover{
+    border: 1px solid rgb(186, 223, 255);
+    /* transform: ; */
+}
+
+
+
+.process-card:hover{
 }
 
 .process-card-sec{
