@@ -14,7 +14,7 @@ function Process() {
           <div className='process-card-sec'>
             <div className='row'>
               <div className='col-md-4 mt-5' >
-                <div className='process-card   shadow'></div>
+                <div className='process-card  shadow'></div>
               </div>
               <div className='col-md-4 mt-5'>
                 <div className='process-card shadow'></div>

@@ -32,12 +32,12 @@ function Gellary() {
                 <div className='col-md-8 p-0'>
 
                     <div className='container section-padding'>
-                        <div className='row'>
-                            <div className='col-md-6'></div>
-                            <div className='col-md-6 col-sm-12 service-heading heading'>
-                                <h1 className=''>Our Services</h1>
+                        {/* <div className='row'> */}
+                            {/* <div className='col-md-6'></div> */}
+                            <div className='col-md-12 col-sm-12 service-heading heading'>
+                                <h1 className=''>Our Gallery</h1>
                             </div>
-                        </div>
+                        {/* </div> */}
                         <div className='ser-rit-sid '>
                             <div className='row mt-5 pt-3 '>
                                 <AnimatePresence mode="wait">
