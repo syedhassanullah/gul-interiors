@@ -62,8 +62,9 @@ const Nav = () => {
             // 👇 URL me #id add kar do
             window.location.hash = id;
         }
-        
+
     };
+    const [servicesOpen, setServicesOpen] = useState(false);
 
 
 
@@ -78,13 +79,44 @@ const Nav = () => {
                                 <Link>Home</Link>
                             </li>
                             <li className="Nav-Link">
-                                <Link onClick={() => scrollToSection("about")}   smooth={true} duration={500} offset={-50} >About Us</Link>
+                                <Link onClick={() => scrollToSection("about")} smooth={true} duration={500} offset={-50} >About Us</Link>
                                 {/* <button >About</button> */}
 
                             </li>
-                            <li className="Nav-Link">
+                            {/* <li className="Nav-Link">
                                 <Link>Services</Link>
+                            </li> */}
+                            <li className="Nav-Link dropdown">
+                                <Link className="dropdown-title">Services</Link>
+
+                                <div className="services-dropdown">
+                                    <div className="dropdown-column">
+                                        <h4>Design</h4>
+                                        <a href="#">UI/UX Design</a>
+                                        <a href="#">Web Design</a>
+                                        <a href="#">Brand Identity</a>
+                                    </div>
+
+                                    <div className="dropdown-column">
+                                        <h4>Development</h4>
+                                        <a href="#">Web Development</a>
+                                        <a href="#">React Development</a>
+                                        <a href="#">API Integration</a>
+                                    </div>
+
+                                    <div className="dropdown-column">
+                                        <h4>Marketing</h4>
+                                        <a href="#">SEO</a>
+                                        <a href="#">Social Media</a>
+                                        <a href="#">Paid Ads</a>
+                                    </div>
+                                </div>
                             </li>
+
+
+
+
+
                             <li className="Nav-Link">
                                 <Link>Projects</Link>
                             </li>
@@ -92,6 +124,15 @@ const Nav = () => {
                                 <Link to={'/'}>Contact</Link>
                             </li>
                         </ul>
+
+
+
+
+
+
+
+
+
                     </div>
                     <div className="humburger">
                         <Hamburger

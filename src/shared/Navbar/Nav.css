@@ -178,3 +178,64 @@ nav {
 
 /* Mobile styles (width 480px tak) */
 @media (max-width: 480px) {}
+
+
+/* Parent */
+.dropdown {
+    position: static;
+}
+
+/* Dropdown menu */
+.services-dropdown {
+   position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%; /* 👈 container width */
+    padding: 35px;
+    background: linear-gradient(135deg, rgb(0,0,0), rgb(0,52,84));
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.35s ease;
+    z-index: 99;
+}
+
+/* 🔥 HOVER WORKING */
+.dropdown:hover .services-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    top: 50px;
+}
+
+/* Column fix */
+.dropdown-column {
+    min-width: 0;
+}
+
+/* Text styles */
+.dropdown-column h4 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.dropdown-column a {
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: 0.3s ease;
+}
+
+.dropdown-column a:hover {
+    color: var(--primary-color);
+    transform: translateX(6px);
+}
+
+
