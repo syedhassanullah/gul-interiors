@@ -1,7 +1,5 @@
 .hero {
     height: 100vh;
-    /* width: 100%; */
-    /* background: black; */
     overflow: hidden;
     position: relative;
 
@@ -12,27 +10,37 @@
         min-width: 100%;
         min-height: 100%;
     }
-
-
-
 }
-
-.background-content-container {
-    background: linear-gradient(50deg, #00284ea7,#00070dc8 );
+.video-sec {
     position: absolute;
-    height: 100vh;
-    z-index: 1;
-    /* align-items: center;
-        justify-content: center;
-        display: flex; */
+    inset: 0;
+    z-index: -1;
 }
 
-.background-content-container .hero-content {
+.bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* yehi smooth crossfade karega */
+}
+
+.bg-video.visible {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+
+ .hero-content {
     /* padding-top: 150px; */
 
 }
 
-.background-content-container .hero-content .content {
+ .hero-content .content {
     text-align: center;
     /* background-color: aqua; */
     /* width: 80%; */
@@ -42,7 +50,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     padding: 60px;
 }
@@ -61,12 +69,12 @@
     width: 400px;
 }
 
-.background-content-container .hero-content .content span {
+ .hero-content .content span {
     background: linear-gradient(90deg, rgb(1, 71, 131), rgb(13, 138, 248));
     color: aliceblue;
 }
 
-.background-content-container .hero-content .content h1 {
+ .hero-content .content h1 {
     color: aliceblue;
     text-transform: uppercase;
     /* font-size: 4rem; */
@@ -75,7 +83,7 @@
     margin: auto;
 }
 
-.background-content-container .hero-content .content p {
+ .hero-content .content p {
     color: rgb(202, 202, 202);
     text-transform: uppercase;
     /* font-size: 1.1rem; */
@@ -83,7 +91,7 @@
                 padding: 0px; */
 }
 
-.background-content-container .hero-content .content button {
+ .hero-content .content button {
     padding: 13px;
     background: linear-gradient(90deg, rgb(1, 71, 131), rgb(13, 138, 248));
     border: none;
@@ -99,7 +107,7 @@
     border-radius: 50px;
 }
 
-.background-content-container .hero-content .content button:hover {
+ .hero-content .content button:hover {
     box-shadow: rgb(31, 147, 248) 0px 0px 20px 0px;
 
 }
@@ -107,11 +115,11 @@
 
 
 @media (max-width: 768px) {
-    .background-content-container .hero-content .content .hero-image img {
+     .hero-content .content .hero-image img {
         width: 300px;
     }
 
-    .background-content-container .hero-content .content .hero-image h1 {}
+     .hero-content .content .hero-image h1 {}
 
 }
 
