@@ -26,7 +26,7 @@ function Contact() {
                         </Stack>
                     </div>
                     <div className='col-md-6'>
-                        <iframe
+                        <div
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.92847499191!2d67.01302187515208!3d24.862302377928007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f9733855d9d%3A0x475698f8ef510ec9!2sGul%20Interiors!5e1!3m2!1sen!2s!4v1790314890144!5m2!1sen!2s"
                             width="600"
                             height="450"
@@ -34,7 +34,7 @@ function Contact() {
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="strict-origin-when-cross-origin"
-                        ></iframe>
+                        ></div>
                     </div>
                 </div>
             </div>
