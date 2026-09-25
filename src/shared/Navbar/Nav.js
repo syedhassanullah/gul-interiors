@@ -64,7 +64,7 @@ const Nav = () => {
         }
 
     };
-    const [servicesOpen, setServicesOpen] = useState(false);
+    // const [servicesOpen, setServicesOpen] = useState(false);
 
 
 

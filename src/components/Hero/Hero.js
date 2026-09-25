@@ -2,14 +2,11 @@ import './Hero.css'
 import bgVideo1 from '../../assets/Videos/bg1.mp4'
 import bgVideo2 from '../../assets/Videos/bg2.mp4'
 import bgVideo5 from '../../assets/Videos/bg5.mp4'
-import bgVideo6 from '../../assets/Videos/bg6.mp4'
 import bgVideo7 from '../../assets/Videos/bg7.mp4'
 import bgVideo8 from '../../assets/Videos/bg8.mp4'
 import { useRef, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import logo from '../../assets/images/geewj.png'
 import { useEffect } from 'react'
-import { FaFacebookF, FaLinkedin } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 
