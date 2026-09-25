@@ -12,12 +12,22 @@
 }
 
 .copy-right{
-    border-top: 1px solid aliceblue;
+    border-top: 1px dashed rgba(240, 248, 255, 0.175);
     text-align: center;
-    justify-content: center;
+    justify-content: end;
     padding: 5px 0px;
+    color: rgba(135, 148, 160, 0.663);
+    font-size: .9rem;
 }
 
 .f-gul-text{
     padding-right: 110px;
+}
+.footer-icon{
+    display: flex;
+    align-items: center;
+    justify-content: 
+    center;
+    gap: 23px;
+    margin-bottom: 60px;
 }

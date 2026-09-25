@@ -1,14 +1,20 @@
 nav {
-    width: 97%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.578) 0px 0px 20px 0px;
     position: fixed;
     /* margin-top: 5px; */
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
     transition: 0.5s ease all;
-    border-radius: 0px 0px 30px 30px;
-    background: linear-gradient(120deg, rgba(0, 10, 18, 0.545), rgb(0, 24, 38));
+    
+    background: linear-gradient(120deg, rgba(0, 12, 18, 0.879), rgba(0, 38, 60, 0.627));
+    /* background: linear-gradient(120deg, rgb(0, 0, 0),rgba(0, 21, 33, 0.796)); */
+    /* background: var(--dark-background); */
+
+    /* border: 1px solid rgba(255, 255, 255, 0.15); */
 }
+
 /* .upper-nav{
     background: black;
     height: 30px;
@@ -17,7 +23,7 @@ nav {
 .inactive-Nav {
     /* background-color: white; */
     /* backdrop-filter: blur(30px); */
-    
+
     /* background: linear-gradient(120deg, rgba(0, 10, 18, 0), rgba(0, 24, 38, 0)); */
     /* height: 60px; */
     /* backdrop-filter: blur(50px); */
@@ -25,27 +31,31 @@ nav {
 
 .active-Nav {
     /* background: linear-gradient(90deg, rgba(0, 0, 1, 0.63), rgba(0, 62, 106, 0.464)); */
-    background: linear-gradient(120deg, rgba(0, 10, 18, 0.545), rgb(0, 24, 38));
+    /* background: linear-gradient(120deg, rgba(0, 10, 18, 0.545), rgb(0, 24, 38)); */
     box-shadow: rgba(0, 0, 0, 0.578) 0px 0px 20px 0px;
     backdrop-filter: blur(5px);
-    height: 90px;
+    width: 98%;
+    /* height: 97px; */
+    border-radius: 0px 0px 30px 30px;
+    padding: 10px 0px;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 60px;
     padding: 0 20px;
     color: aliceblue;
 }
+
 
 .nav-title {
     /* font-size: 1.5rem; */
     text-transform: uppercase;
     font-weight: 700;
     z-index: 1;
-    width: 140px;
+    width: 190px;
 
     img {
         width: 100%;
@@ -74,6 +84,7 @@ nav {
     position: relative;
     padding: 5px 0;
     font-weight: 500;
+    /* font-size: 15px; */
 }
 
 .Nav-Link a::before {
@@ -200,12 +211,25 @@ nav {
 
 /* Dropdown menu */
 .services-dropdown {
-   position: absolute;
-    left: 0;
-    top: 0px;
-    width: 100%; /* 👈 container width */
+    position: absolute;
+    /* left: 10px; */
+    top: 10px;
+    width: 40rem;
+    height: 40rem;
+    /* 👈 container width */
+    margin-left: -220px;
     padding: 35px;
-    background: linear-gradient(135deg, rgb(0,0,0), rgb(0,52,84));
+    /* background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 52, 84)); */
+    background-color: rgba(255, 255, 255, 0.818);
+    background: linear-gradient(135deg,
+            rgba(227, 238, 244, 0.97) 0%,
+            rgba(254, 254, 254, 0.99) 45%,
+            rgba(239, 246, 248, 0.978) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -214,8 +238,8 @@ nav {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(10px);
-    transition: all 0.35s ease;
+    /* transform: translateY(30px); */
+    transition: all 0.3s ease;
     z-index: 99;
 }
 
@@ -250,5 +274,3 @@ nav {
     color: var(--primary-color);
     transform: translateX(6px);
 }
-
-

@@ -1,9 +1,10 @@
+import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitch, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import './Footer.css'
 
 
 
-const Footer = () =>{
-    return(
+const Footer = () => {
+    return (
         <div className="footer pt-5 ">
             <div>
                 <div className='container '>
@@ -25,9 +26,32 @@ const Footer = () =>{
                             </div>
                         </div>
                     </div>
+                    <div className='row'>
+                        <div className='footer-icon'>
+
+                            <div className='icon'>
+                                <FaInstagram />
+                            </div>
+                            <div className='icon'>
+                                <FaFacebookF />
+                            </div>
+                            <div className='icon'>
+                                <FaWhatsapp />
+                            </div>
+                            <div className='icon'>
+                                <FaLinkedin />
+                            </div>
+                            <div className='icon'>
+                                <FaTwitter />
+                            </div>
+                            <div className='icon'>
+                                <FaWhatsapp />
+                            </div>
+                        </div>
+                    </div>
 
                     <div className='row copy-right'>
-                        all right resifkjlkfjals
+                        all right resiverd by ""
                     </div>
                 </div>
             </div>

@@ -12,6 +12,7 @@ import Gellary from '../../components/Gellary/Gellary'
 import Process from '../../components/Process/Process'
 // https://homeinteriordesigner.pk/flooring-karachi
 // https://grandinteriors.com.pk/
+import ServicesSection from '../../components/Services/small Service/ServicesSection'
 
 // import Services from '../../components/Services/Services'
 
@@ -22,6 +23,7 @@ const Home = () => {
         <>
         <Hero/>
         <Element name="about">
+            <ServicesSection/>
         <About  />
         </Element>
         <Process/>

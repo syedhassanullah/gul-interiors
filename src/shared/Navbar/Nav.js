@@ -5,7 +5,7 @@ import './Nav.css'
 import SideNav from "./SideNav";
 import { Slant as Hamburger } from 'hamburger-react'
 // import logo from '../../assets/images/GULLOGO WHOTE.png'
-import logo from '../../assets/images/geewj.png'
+import logo from '../../assets/images/logo new 4.png'
 
 
 
@@ -71,7 +71,9 @@ const Nav = () => {
     return (
         <>
             <nav className={navClass}>
-                <div className="upper-nav"></div>
+                <div className="upper-nav">
+                    
+                </div>
                 <div className="nav-container container">
                     <div className="nav-title"><img src={logo} alt="logo" /></div>
                     <div className="nav-item">
@@ -134,6 +136,11 @@ const Nav = () => {
 
 
 
+                    </div>
+                    <div>
+                         0318-1088606
+                         <br/>
+                         0309-0660970
                     </div>
                     <div className="humburger">
                         <Hamburger
