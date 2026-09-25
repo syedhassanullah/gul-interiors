@@ -95,23 +95,23 @@ const Nav = () => {
                                 <div className="services-dropdown">
                                     <div className="dropdown-column">
                                         <h4>Design</h4>
-                                        <a >UI/UX Design</a>
-                                        <a >Web Design</a>
-                                        <a >Brand Identity</a>
+                                        <button >UI/UX Design</button>
+                                        <button >Web Design</button>
+                                        <button >Brand Identity</button>
                                     </div>
 
                                     <div className="dropdown-column">
                                         <h4>Development</h4>
-                                        <a >Web Development</a>
-                                        <a >React Development</a>
-                                        <a >API Integration</a>
+                                        <button >Web Development</button>
+                                        <button >React Development</button>
+                                        <button >API Integration</button>
                                     </div>
 
                                     <div className="dropdown-column">
                                         <h4>Marketing</h4>
-                                        <a >SEO</a>
-                                        <a >Social Media</a>
-                                        <a >Paid Ads</a>
+                                        <button >SEO</button>
+                                        <button >Social Media</button>
+                                        <button >Paid Ads</button>
                                     </div>
                                 </div>
                             </li>
